@@ -1,7 +1,7 @@
 var stringRotation = require('../1.9_stringRotation');
 
 describe('#stringRotation', function(){
-  it('returns a true if inputA is a substring of inputB', function(){
+  xit('returns a true if inputA is a substring of inputB', function(){
     var input;
     var inputA = 'barnyard';
     var inputB = 'nyardbar';

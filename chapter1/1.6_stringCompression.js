@@ -12,7 +12,13 @@ module.exports = function(input){
       array.push(input[i]+count)
     }
   }
-  console.log(array.toString().replace(/,/g, ''));
-  return(array.toString().replace(/,/g, ''));
+  //console.log(array.toString().replace(/,/g, ''));
+  return(array.join(''));
 
 };
+
+
+// //Challenge:
+// Don't use an array accumulator, use a string accumulator
+
+// if compressed string is not shorter than original, return original string
