@@ -12,7 +12,7 @@ describe('#isUnique', function(){
     expect(actual).toEqual(expectedOutput);
   }),
 
-  it('returns "true" if a string does have unique characters', function(){
+  xit('returns "true" if a string does have unique characters', function(){
     var string = 'Bye!';
     var expectedOutput = true ;
     var actual = isUnique(string);
