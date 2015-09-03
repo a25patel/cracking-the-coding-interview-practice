@@ -19,10 +19,7 @@ module.exports = function(string){
 };
 
 
-
-
-
-
+// TRY USING OBJECT DATA STRUCTURE INSTEAD OF ARRAYS 
 // 2. go through the array and compare each character with all other characters *
 // 3. if at any point the characters match return a false
 
