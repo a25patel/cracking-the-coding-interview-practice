@@ -25,16 +25,22 @@
 // result: ['Carthorse’]
 
 // Write a function that detects anagrams.
-// IT: -takes two arguments: a word and an array of words
-//     -returns an array of words that are anagrams of the given word
-//     -does not return anagram subsets (given “good” should not return “dog” or “goody”)
-//     -is case insensitive
-//     -does not detect itself as an anagram (given “hello” should not return “hello”)
+// IT: 1. takes two arguments: a word and an array of words
+//     2. returns an array of words that are anagrams of the given word
+//     3. does not return anagram subsets (given “good” should not return “dog” or “goody”)
+//     4. is case insensitive
+//     5. does not detect itself as an anagram (given “hello” should not return “hello”)
 
 
-var array = ['stream', 'pigeon', 'maters', 'mate', 'seam', 'ram'];
+Psuedo Code:
+1. make the word and the strings of the array LowerCase or UpperCase (4)
+2. go through the array and match each string to the word. rid of any word that matches fully (5)
+3. go through the array and rid of any words/strings that are not the same in length (3)
+4. 
+
+var array = ['stream', 'pigeon', 'maters', 'mate', 'seam', 'ram', 'master'];
 var word = 'master';
 
 function findLetters(word){
-  word.split('')
+  word.toLowerCase().split('')
 }
