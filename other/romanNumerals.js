@@ -2,7 +2,7 @@
 // integer.
 //
 // example: Input VII   Output 7
-//         Input XIX     Output 19
+//          Input XIX   Output 19
 //
 // Rule of Roman Numberals:
 // 1. A letter repeated, repeats its value many times
@@ -13,37 +13,63 @@
 //   c. Dont subtract a number from one that it ten times greater
 // 4. A bar over the top of the latter or string of letters multiplies the number by 1,000
 
+// STRETCH:::: FLIP IT!!! Take an integer and output the roman numeral!!!
+// QUIZ:::: Do it recursively, email code and rationale!
 
-function numerals(string){
+var numerals = {
+  'I': 1,
+  'V': 5,
+  'X': 10,
+  'L': 50,
+  'C': 100,
+  'D': 500,
+  'M': 1000,
+};
+
+function convert(string){
   string = string.toUpperCase().split('');
-  var array = [];
-  string.forEach(function(ele){
-    if(ele === 'I'){
-      array.push(1);
-    }else if(ele === 'V'){
-      array.push(5)
-    }else if(ele === 'X') {
-      array.push(10)
-    }else if(ele === 'L') {
-      array.push(50)
-    }else if(ele === 'C'){
-      array.push(100)
-    }else if (ele === 'D'){
-      array.push(500)
-    }else if(ele === 'M'){
-      array.push(1000)
-    }
-  })
-  console.log(string);
-  console.log(array);
-  var total = 0;
-  array.map(function(prev, curr){
-    prev < current ? 
-  })
+  var numbers = [];
+  for (var i = 0; i < string.length; i++) {
+    numbers.push(numerals[string[i]]);
+  }
+  total(numbers);
 }
 
+// ORIGINAL FUNCTION
+// function total(array){
+//   var total = 0;
+//   for (var i = 0; i < array.length; i++) {
+//     if(array[i] < array[i + 1]){
+//       total += -array[i];
+//     }else{
+//       total += array[i];
+//     }
+//   }
+//   console.log(total);
+// }
 
-numerals('xix'); //19
-numerals('lvi'); //56
-numerals('cmlxiii'); //963
-numerals('cclxxxi'); //281
+
+// RECURSIVE FUNCTION
+var i = 0;
+var total = 0;
+function total(array){
+  if( i === array.length){
+    console.log(total);
+  }else if(array[i] < array[i + 1]){
+    total += -array[i];
+    i++;
+    total(array);
+  }else{
+    total += array[i];
+    i++;
+    total(array);
+  }
+}
+
+convert('xix'); //19
+convert('lvi'); //56
+convert('cmlxiii'); //963
+convert('cclxxxi'); //281
+
+// LOOK INTO:
+  // switch case statements
