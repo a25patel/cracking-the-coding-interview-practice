@@ -1,3 +1,6 @@
+// Figure out what the prompt was 
+
+
 // Go through solutions and dissect the code!
 // Go thrugh and try to find solution on own
 

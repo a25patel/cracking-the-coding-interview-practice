@@ -7,5 +7,9 @@ describe('#swapMe', function(){
     var actual = swapMe(array);
 
     expect(actual).toEqual(expectedOutput);
+  }),
+
+  xit(function(){
+
   })
-})
+});
