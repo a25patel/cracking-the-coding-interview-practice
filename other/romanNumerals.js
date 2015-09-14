@@ -13,9 +13,9 @@
 // STRETCH:::: FLIP IT!!! Take an integer and output the roman numeral!!!
 
 
-// module.exports = function roman(string){
+module.exports = function roman(string){
 
-// };
+};
 
 var numerals = {
   'I': 1,
@@ -74,7 +74,7 @@ if it is
   find the base case that is higher, and subtract one
 else
   find the base case that is lower and multiply but number
-  
+
 
 
 // ORIGINAL FUNCTION
